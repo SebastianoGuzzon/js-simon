@@ -23,7 +23,7 @@ setTimeout(function() {
 
 setTimeout(() => {
   const numeriAggiunti = [];
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 1; i <= 5; i++) {
     const numeroAggiunto = parseInt(prompt(`Inserisci un numero ${i}`))
     numeriAggiunti.push(numeroAggiunto);
   }
@@ -38,7 +38,9 @@ for (const numeroAggiunto of numeriAggiunti) {
     equalNumbers.push(numeroAggiunto);
   }
 }
+
 // Adesso stampo su html le risposte.
+
 if (equalNumbers.length === 0) {
   document.getElementById('not-equal').textContent = ('Peccato! Non hai indovinato.. Riprova!');
 } else {
